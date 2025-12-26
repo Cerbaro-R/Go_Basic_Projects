@@ -29,6 +29,7 @@ func (p *Personagem) ReceberDano(quantidade int) {
 // 3. Método com Value Receiver (Sem o "*")
 // Aqui o Go cria uma CÓPIA do personagem. O original não muda.
 func (p Personagem) MostrarStatus() {
+
 	fmt.Printf("--- STATUS ATUAL ---\n")
 	fmt.Printf("Nome: %s | HP: %d | Nivel: %d\n", p.Nome, p.Status.HP, p.Status.Nivel)
 	fmt.Printf("--------------------\n\n")
